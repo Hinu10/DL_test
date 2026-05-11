@@ -1,0 +1,96 @@
+\documentclass[uplatex,a4paper,12pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{集合・微分 確認テスト}
+\author{}
+\date{}
+\maketitle
+
+\section*{注意}
+\begin{itemize}
+\item 試験時間は5分とする．
+\item 全10問，各10点，合計100点とする．
+\item 60点以上を合格とする．
+\end{itemize}
+
+\section*{問題}
+
+\begin{enumerate}
+
+\item 集合の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item ある条件を満たすものの集まり
+\item 1つの数だけを表すもの
+\item 微分するための記号
+\end{enumerate}
+
+\item $a$ が集合 $A$ の要素であることを表す記号として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item $a \in A$
+\item $a = A$
+\item $a \to A$
+\end{enumerate}
+
+\item 写像
+\[
+f:A\to B
+\]
+の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item $A$ の元を $B$ の元に対応させる規則
+\item $A$ と $B$ を足し算する規則
+\item $A$ の元をすべて削除する規則
+\end{enumerate}
+
+\item 集合
+\[
+A=\{x\in \mathbb{R}\mid 1<x<5\}
+\]
+について，上限 $\sup A$ と下限 $\inf A$ を求めよ．
+
+\item 次の関数を $x$ について偏微分せよ．
+\[
+f(x,y)=3x^2+2xy+y^2
+\]
+
+\item 次の関数を $y$ について偏微分せよ．
+\[
+f(x,y)=3x^2+2xy+y^2
+\]
+
+\item 次の関数の勾配 $\nabla f$ を求めよ．
+\[
+f(x,y)=x^2+4y^2
+\]
+
+\item 次の変数変換について，ヤコビ行列 $J$ を求めよ．
+\[
+u=x+y,\quad v=x-y
+\]
+
+\item 次の変数変換について，ヤコビアン $|J|$ を求めよ．
+\[
+u=x+y,\quad v=x-y
+\]
+
+\item
+\[
+x=uv,\quad y=u+v,\quad f(x,y)=x^2+y^2
+\]
+とする．連鎖律を用いるとき，
+\[
+\frac{\partial f}{\partial u}
+\]
+として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item $2uv^2+2u+2v$
+\item $2u^2v+2u+2v$
+\item $uv+u+v$
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

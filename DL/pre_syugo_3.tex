@@ -1,0 +1,183 @@
+\documentclass[uplatex,a4paper,12pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{集合・微分 確認テスト 解答}
+\author{}
+\date{}
+\maketitle
+
+\section*{配点}
+全10問，各10点，合計100点．60点以上を合格とする．
+
+\section*{解答}
+
+\begin{enumerate}
+
+\item
+\[
+\boxed{(a)}
+\]
+集合とは，ある条件を満たすものの集まりである．
+
+\item
+\[
+\boxed{(a)}
+\]
+$a$ が集合 $A$ の要素であることを
+\[
+a\in A
+\]
+と表す．
+
+\item
+\[
+\boxed{(a)}
+\]
+写像 $f:A\to B$ は，$A$ の元を $B$ の元に対応させる規則である．
+
+\item
+\[
+A=\{x\in \mathbb{R}\mid 1<x<5\}
+\]
+であるから，
+\[
+\boxed{\sup A=5,\qquad \inf A=1}
+\]
+である．
+
+\item
+\[
+f(x,y)=3x^2+2xy+y^2
+\]
+を $x$ について偏微分すると，
+\[
+\frac{\partial f}{\partial x}
+=
+6x+2y
+\]
+したがって，
+\[
+\boxed{6x+2y}
+\]
+
+\item
+\[
+f(x,y)=3x^2+2xy+y^2
+\]
+を $y$ について偏微分すると，
+\[
+\frac{\partial f}{\partial y}
+=
+2x+2y
+\]
+したがって，
+\[
+\boxed{2x+2y}
+\]
+
+\item
+\[
+f(x,y)=x^2+4y^2
+\]
+より，
+\[
+\frac{\partial f}{\partial x}=2x,
+\qquad
+\frac{\partial f}{\partial y}=8y
+\]
+したがって，
+\[
+\boxed{\nabla f=(2x,8y)}
+\]
+
+\item
+\[
+u=x+y,\qquad v=x-y
+\]
+より，
+\[
+J=
+\begin{pmatrix}
+\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y}\\
+\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&1\\
+1&-1
+\end{pmatrix}
+\]
+したがって，
+\[
+\boxed{
+J=
+\begin{pmatrix}
+1&1\\
+1&-1
+\end{pmatrix}
+}
+\]
+
+\item
+\[
+J=
+\begin{pmatrix}
+1&1\\
+1&-1
+\end{pmatrix}
+\]
+より，
+\[
+|J|=1\cdot(-1)-1\cdot1=-2
+\]
+したがって，
+\[
+\boxed{|J|=-2}
+\]
+
+\item
+\[
+\boxed{(a)}
+\]
+連鎖律より，
+\[
+\frac{\partial f}{\partial u}
+=
+\frac{\partial f}{\partial x}\frac{\partial x}{\partial u}
++
+\frac{\partial f}{\partial y}\frac{\partial y}{\partial u}
+\]
+である．ここで，
+\[
+\frac{\partial f}{\partial x}=2x,\quad
+\frac{\partial f}{\partial y}=2y,\quad
+\frac{\partial x}{\partial u}=v,\quad
+\frac{\partial y}{\partial u}=1
+\]
+だから，
+\[
+\frac{\partial f}{\partial u}
+=
+2xv+2y
+\]
+さらに
+\[
+x=uv,\quad y=u+v
+\]
+を代入して，
+\[
+\frac{\partial f}{\partial u}
+=
+2uv^2+2u+2v
+\]
+したがって，
+\[
+\boxed{2uv^2+2u+2v}
+\]
+
+\end{enumerate}
+
+\end{document}

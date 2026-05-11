@@ -1,0 +1,100 @@
+\documentclass[uplatex,a4paper,12pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{機械学習基礎 確認テスト}
+\author{}
+\date{}
+\maketitle
+
+\section*{注意}
+\begin{itemize}
+\item 試験時間は5分とする．
+\item 全10問，各10点，合計100点とする．
+\item 60点以上を合格とする．
+\end{itemize}
+
+\section*{問題}
+
+\begin{enumerate}
+
+\item 機械学習の説明として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 人間がすべての判断ルールを記述する手法
+\item データ集合からパターンや判断ルールを自動で獲得する手法
+\item 乱数だけを用いて答えを決める手法
+\end{enumerate}
+
+\item 教師あり学習で用いるデータとして最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 入力データのみ
+\item 入力と出力のペア
+\item 報酬のみ
+\end{enumerate}
+
+\item 次のうち，回帰問題の例として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 画像が犬か猫かを判定する
+\item 手書き数字を0から9に分類する
+\item 株価を予測する
+\end{enumerate}
+
+\item 次のうち，分類問題の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 入力から連続値を予測する問題
+\item 入力から離散的なクラスを予測する問題
+\item 入力データの次元を増やす問題
+\end{enumerate}
+
+\item 次の単回帰モデル
+\[
+y=\alpha+\beta x
+\]
+において，重みに相当するものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item $\alpha$
+\item $\beta$
+\item $y$
+\end{enumerate}
+
+\item 次の説明に当てはまる語句を1つ選べ．
+
+「学習に使用していない未知のデータに対する予測性能」
+\begin{enumerate}[label=(\alph*)]
+\item 汎化性能
+\item 過学習
+\item バッチサイズ
+\end{enumerate}
+
+\item 次のうち，過学習の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 学習データに過剰に適合し，未知データで性能が低下する現象
+\item 学習データがまったく使われない現象
+\item モデルの予測が常に正解する現象
+\end{enumerate}
+
+\item 二値分類において，
+\[
+TP=30,\quad TN=50,\quad FP=10,\quad FN=10
+\]
+であるとき，正解率 Accuracy を求めよ．
+
+\item ソフトマックス関数の出力として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 各クラスに属する確率
+\item 入力画像の画素値そのもの
+\item 学習率
+\end{enumerate}
+
+\item 勾配降下法における学習率 $\eta$ の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item パラメータの更新量を調整する値
+\item データの正解ラベル
+\item クラス数
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

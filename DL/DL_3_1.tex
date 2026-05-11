@@ -1,0 +1,91 @@
+\documentclass[uplatex,a4paper,12pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{ニューラルネットワーク基礎 確認テスト}
+\author{}
+\date{}
+\maketitle
+
+\section*{注意}
+\begin{itemize}
+\item 試験時間は5分とする．
+\item 全10問，各10点，合計100点とする．
+\item 60点以上を合格とする．
+\end{itemize}
+
+\section*{問題}
+
+\begin{enumerate}
+
+\item 次のうち，多層パーセプトロン（MLP）の説明として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 線形回帰のみを行うモデル
+\item パーセプトロンを多層化したニューラルネットワーク
+\item データを暗号化するモデル
+\end{enumerate}
+
+\item 次のうち，線形分離不可能な問題として知られているものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item AND問題
+\item OR問題
+\item XOR問題
+\end{enumerate}
+
+\item 次の式
+\[
+y=g(\mathbf{w}^\top \mathbf{x}+b)
+\]
+において，$g$ に相当するものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 誤差関数
+\item 活性化関数
+\item 学習率
+\end{enumerate}
+
+\item 次のうち，ReLU関数として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item $\mathrm{ReLU}(x)=\max(x,0)$
+\item $\mathrm{ReLU}(x)=\dfrac{1}{1+e^{-x}}$
+\item $\mathrm{ReLU}(x)=x^2$
+\end{enumerate}
+
+\item ニューラルネットワークにおいて，入力層と出力層の間に存在する層を何というか．
+
+\item 次のうち，多値分類問題で出力層によく用いられる活性化関数を1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item ReLU
+\item ソフトマックス関数
+\item 恒等関数
+\end{enumerate}
+
+\item 勾配降下法における学習率 $\eta$ の役割として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item パラメータ更新量を調整する
+\item クラス数を決定する
+\item データ数を増加させる
+\end{enumerate}
+
+\item 次の説明に当てはまる語句を答えよ．
+
+「出力層から順に誤差を伝播させることで，各パラメータの勾配を効率的に計算する手法」
+
+\item 次のうち，ハイパーパラメータに該当するものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 重み $W$
+\item バイアス $b$
+\item 学習率
+\end{enumerate}
+
+\item 次の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item MLPは非線形関数を表現できない
+\item 隠れ層と活性化関数によって非線形な関数を近似できる
+\item 活性化関数を用いなくても非線形問題を解ける
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

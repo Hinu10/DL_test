@@ -1,0 +1,85 @@
+\documentclass[uplatex,a4paper,12pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{ニューラルネットワークの最適化・正則化 確認テスト}
+\author{}
+\date{}
+\maketitle
+
+\section*{注意}
+\begin{itemize}
+\item 試験時間は5分とする．
+\item 全10問，各10点，合計100点とする．
+\item 60点以上を合格とする．
+\end{itemize}
+
+\section*{問題}
+
+\begin{enumerate}
+
+\item SGDの説明として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 常に全データを用いて更新する手法
+\item 一部のサンプルを用いてパラメータ更新を行う手法
+\item 勾配を用いない最適化手法
+\end{enumerate}
+
+\item データ集合を1周学習する単位を何というか．
+
+\item モメンタム法の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 前回の更新量を利用する
+\item 学習率を常に0にする
+\item 重みを固定する
+\end{enumerate}
+
+\item Adamの特徴として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item RMSPropを発展させた手法
+\item 勾配を全く利用しない
+\item 正則化専用の手法
+\end{enumerate}
+
+\item Xavier初期化が主に想定している活性化関数を1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item ReLU
+\item sigmoidやtanh
+\item 恒等関数
+\end{enumerate}
+
+\item He初期化が主に想定している活性化関数を1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item sigmoid
+\item tanh
+\item ReLU
+\end{enumerate}
+
+\item バッチ正規化の目的として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 内部共変量シフトを抑える
+\item データ数を増やす
+\item クラス数を削減する
+\end{enumerate}
+
+\item L2正則化の別名を答えよ．
+
+\item 次のうち，過学習を抑える手法として最も適切なものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item Dropout
+\item 行列積
+\item ソフトマックス関数
+\end{enumerate}
+
+\item 転移学習の説明として正しいものを1つ選べ．
+\begin{enumerate}[label=(\alph*)]
+\item 他タスクで学習した知識を利用する
+\item 必ず最初から学習する
+\item 教師データを使わない
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
